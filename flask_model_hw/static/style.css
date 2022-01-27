@@ -1,0 +1,27 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+header {
+    color: white;
+    background-color: coral;
+    padding: 5px;
+}
+
+header > nav {
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+}
+
+.order-block {
+    background-color: cornflowerblue;
+    color: cornsilk;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    line-height: 1.5;
+}

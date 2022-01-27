@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>Orders</title>
+    </head>
+    <body>
+        <header>
+            <nav><a href="/orders">Home</a></nav>
+            <h1>Book Worms Inc.</h1>
+        </header>
+        <h2>Open book orders</h2>
+        <ul>
+            {% for order in orders %}
+                <li>Customer name: {{ order.customer_name }} 
+                    <a href="/orders/{{orders.index(order)}}">Full details</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
